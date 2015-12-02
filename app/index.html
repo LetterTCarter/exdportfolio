@@ -1,23 +1,26 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>exdportfolio</title>
+    <title>Experimental Interaction Portfolio</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -26,18 +29,72 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>jQuery</li>
-      </ul>
+    <header>
+      <h1>EXD</h1>
+      <p>T Jay Carter | MCAD | Summer 2015</p>
+      <div class="mainNav">
+        <h3>Projects:</h3>
+          <ul>
+            <li><a href="#">Building Blocks</a></li>
+            <li><a href="#">Computational Aesthetics</a></li>
+            <li><a href="#">The Medium of Text</a></li>
+            <li><a href="#">Visual Representations of Time</a></li>
+            <li><a href="#">Semantic Sounds</a></li>
+            <li><a href="#">Models of the Physcial World</a></li>
+            <li><a href="#">Emergent Behaviors</a></li>
+            <li><a href="#">Transcoding</a></li>
+            <li><a href="#">Final Project</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <div class="mainContent">
+      <h1>Main Content Area</h1>
+
+      <div class="contentCarousel">
+
+        <article id="exercise1">
+          <h2>Building Blocks: Exercise 1</h2>
+          <img src="images/exercise1.png" alt="Screengrab of Exercise 1"/>
+          <h3>Uploading a p5.js sketch.</h3>
+          <p>The goal of Exercise 1 was to upload a <a href="http://p5js.org">p5.js</a> sketch, preparing us for the rest of the class as we explored Experimental Interaction through processing and <a href="http://p5js.org">p5.js.</a></p>
+        </aticle>
+
+        <article id="assignment1">
+          <h2>Building Blocks: Assignment 1</h2>
+          <img src="images/assignment1.png" alt="Screengrab of Assignment 1"/>
+          <h3>Capturing events.</h3>
+          <p>Hover your mouse over the sketch. Click the mouse button to change the color.</p>
+        </article>
+
+        <article id="exercise2">
+          <h2>Computational Aesthetics: Exercise 2</h2>
+          <img src="images/exercise2.png" alt="Screengrab of Exercise 2"/>
+          <h3>Iteration</h3>
+        </article>
+
+        <article id="assignment2-1">
+          <h2>Computational Aesthetics: Assignment 2</h2>
+          <img src="images/assignment2-1.png" alt="Screengrab of Assignment 2 part 1"/>
+          <h3>Part 1</h3>
+        </article>
+
+        <article id="assignment2-2">
+          <h2>Computational Aesthetics: Assignment 2</h2>
+          <img src="" alt="Screengrab of Exercise 2"/>
+          <h3>Part 2</h3>
+        </article>
+
+        <article id="assignment2-3">
+          <h2>Computational Aesthetics: Assignment 2</h2>
+          <img src="" alt="Screengrab of Exercise 2"/>
+          <h3>Part 3</h3>
+        </article>
+
+      </div>
+
     </div>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -51,9 +108,11 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-colorbox/jquery.colorbox.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
