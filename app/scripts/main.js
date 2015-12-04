@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 /*global $*/
 'use strict';
 
