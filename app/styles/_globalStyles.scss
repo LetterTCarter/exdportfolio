@@ -1,9 +1,15 @@
 // globalStyles.scss
 
 body {
-  background: #f9ffee;
+  background: $dark-blue;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: $white;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }
 
 .browserupgrade {
@@ -15,9 +21,12 @@ body {
 
 h1 {
   color: $brown;
-  border-top: 1px dotted $dark-gray;
 }
 
 h2 {
   color: $green;
+}
+
+.visuallyhidden {
+  @include visuallyhidden;
 }

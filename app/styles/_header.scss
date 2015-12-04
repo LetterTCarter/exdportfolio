@@ -1,0 +1,19 @@
+// header.scss
+
+header {
+  background-color: $white;
+  margin: 0;
+  padding: 30px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0.625em 0.625em 0.625em 0;
+    }
+  }
+  p {
+    color: $brown;
+  }
+}

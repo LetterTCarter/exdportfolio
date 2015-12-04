@@ -6,7 +6,9 @@
     "modernizr": "~2.8.1",
     "normalize-css": "normalize.css#~3.0.3",
     "jquery-colorbox": "colorbox#~1.6.3",
-    "slick-carousel": "~1.5.9"
+    "slick-carousel": "~1.5.9",
+    "imagesloaded": "~3.2.0",
+    "imagefill": "*"
   },
   "devDependencies": {
     "chai": "~3.4.2",
