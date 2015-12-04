@@ -6,4 +6,6 @@ console.log('\'Allo \'Allo!');
 $(function() {
   console.log('Document is ready for action.');
 
+  //$('.week1').slick();
+
 });
