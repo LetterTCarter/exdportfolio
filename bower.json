@@ -8,7 +8,8 @@
     "jquery-colorbox": "colorbox#~1.6.3",
     "slick-carousel": "~1.5.9",
     "imagesloaded": "~3.2.0",
-    "imagefill": "*"
+    "imagefill": "*",
+    "magnific-popup": "~1.0.0"
   },
   "devDependencies": {
     "chai": "~3.4.2",

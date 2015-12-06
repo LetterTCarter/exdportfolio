@@ -18,6 +18,11 @@ $(function() {
     adaptiveHeight: true
   });
 
+  //currently loads image in lightbox window
   $('.project').colorbox();
+
+  $('.ajax-popup-link').magnificPopup({
+    type: 'ajax'
+  });
 
 });

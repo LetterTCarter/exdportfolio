@@ -1,13 +1,12 @@
-
 // A wind direction vector
 var wind;
 // Circle position
 var position;
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(720, 200);
   // Request the data from openweathermap
-  var url = 'http://api.openweathermap.org/data/2.5/weather?&id=5577592=imperial&APPID=7bbbb47522848e8b9c26ba35c226c734';
+  var url = 'http://api.openweathermap.org/data/2.5/weather?q=New%20York,NY&units=imperial&APPID=7bbbb47522848e8b9c26ba35c226c734';
   loadJSON(url, gotWeather);
   // Circle starts in the middle
   position = createVector(width/2, height/2);
