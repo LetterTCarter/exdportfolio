@@ -1,16 +1,58 @@
 // header.scss
 
 header {
+  @include clearfix;
   background-color: $white;
+  width: 100%;
   margin: 0;
   padding: 30px;
+  border-bottom: 3px solid $light-blue;
+  .headContainer {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
   ul {
     list-style-type: none;
-    margin: 0;
+  	margin: 0;
     padding: 0;
-    li {
-      display: inline-block;
-      padding: 0.625em 0.625em 0.625em 0;
+    z-index: 3 !important;
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  li {
+    float: left;
+  	margin: 0;
+    padding: 0;
+  }
+  li a {
+    text-transform: uppercase;
+    color: $dark-blue;
+    display: block;
+  	text-decoration: none;
+    padding: 0;
+  }
+  li ul {
+    display: none;
+  	position: absolute;
+  	padding: 0;
+  }
+  li:hover ul {
+    display: block;
+    background-color: $white;
+  }
+  li li {
+    float: none;
+  }
+  li li a {
+    padding: 0.625em;
+    &:hover {
+      background-color: $green;
+      color: $dark-blue;
+    }
+    &:visited {
+      color: $brown;
     }
   }
   p {

@@ -18,4 +18,6 @@ $(function() {
     adaptiveHeight: true
   });
 
+  $('.project').colorbox();
+
 });
