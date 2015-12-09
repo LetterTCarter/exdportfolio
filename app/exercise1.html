@@ -35,11 +35,11 @@
       <div class="headContainer">
         <p>T Jay Carter | MCAD | Summer 2015</p>
         <nav class="mainNav">
-          <h1>Experimental Interaction Portfolio</h1>
+          <h1><a href="index.html">Experimental Interaction Portfolio</a></h1>
             <ul id="navLinks">
               <li><a href="index.html">EXD Projects</a>
                 <ul>
-                  <li><a href="exercises/exercise1/index.html">Building Blocks</a></li>
+                  <li><a href="#">Building Blocks</a></li>
                   <li><a href="#exercise2">Computational Aesthetics</a></li>
                   <li><a href="#exercise3-1">The Medium of Text</a></li>
                   <li><a href="#exercise4">Visual Representations of Time</a></li>
@@ -55,10 +55,13 @@
       </div>
     </header>
 
-    <div class="mainContent">
-
-
+    <div class="sketchDiv">
+      <h2>Building Blocks</h2>
+        <h3>Assignment 2: Part 2</h3>
+        <p>Upload a p5.js sketch. This particular sketch shows the temperature and wind direction in Greeley, CO.</p>
     </div>
+
+    <div id="sketchDivContainer"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -83,12 +86,14 @@
     <script src="/bower_components/imagefill/js/jquery-imagefill.js"></script>
     <!-- endbuild -->
 
-    <script src="exercises/exercise1/p5.dom.js" charset="utf-8"></script>
-    <script src="exercises/exercise1/p5.js" charset="utf-8"></script>
-      <script src="exercises/exercise1/app.js" charset="utf-8"></script>
-
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <!--p5.js scripts-->
+    <script src="scripts/p5js/p5.js"></script>
+    <script src="scripts/p5js/p5.dom.js"></script>
+    <script src="scripts/p5js/exercise1.js"></script>
+
   </body>
 </html>

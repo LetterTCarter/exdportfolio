@@ -31,6 +31,22 @@ h2 {
   background-color: $green;
 }
 
+.sketchDiv {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+#sketchDivContainer {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+button {
+  color: $white;
+  background-color: $green;
+  margin-bottom: 20px;
+}
+
 .visuallyhidden {
   @include visuallyhidden;
 }

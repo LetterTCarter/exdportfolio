@@ -5,11 +5,20 @@ header {
   background-color: $white;
   width: 100%;
   margin: 0;
-  padding: 30px;
+  padding: 0;
   border-bottom: 3px solid $light-blue;
   .headContainer {
     max-width: 1020px;
     margin: 0 auto;
+  }
+  h1 a {
+    text-decoration: none;
+    color: $dark-blue;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 2px solid $green;
+      padding-bottom: 0.225em;
+    }
   }
   ul {
     list-style-type: none;
@@ -54,6 +63,9 @@ header {
     &:visited {
       color: $brown;
     }
+  }
+  nav {
+    padding-bottom: 30px;
   }
   p {
     color: $brown;
