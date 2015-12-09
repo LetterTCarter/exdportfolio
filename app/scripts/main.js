@@ -5,7 +5,7 @@ $(function() {
   console.log('Document is ready for action.');
 
   //hide the mainContent h1s
-  $('.mainContent h1').hide();
+  $('.mainContent h1').remove();
 
   $('.projectImage').imagefill();
   // image stretches to fill container
@@ -21,8 +21,28 @@ $(function() {
   //currently loads image in lightbox window
   $('.project').colorbox();
 
+
+
   $('.ajax-popup-link').magnificPopup({
     type: 'ajax'
   });
 
+  //active link highlighting
+  $('a').click(function() {
+    $('.clicked').removeClass('clicked');
+  			$(this).addClass('clicked');
+  });
+
+  //menu link animations
+  $('a').hover(function(){
+			$(this).animate({
+				fontSize: '+=1px',
+				padding: '+=1px'
+			}, 300);
+		}, function(){
+			$(this).animate({
+				fontSize: '-=1px',
+				padding: '-=1px'
+			}, 300);
+		});
 });
