@@ -4,12 +4,16 @@
 $(function() {
 	console.log('Document is ready for action.');
 
-	//hide the mainContent h1s
+	// hide the mainContent h1s
 	$('.mainContent h1').remove();
 
-	$('.projectImage').imagefill();
-	// image stretches to fill container
+	// hide lightbox home buttons
+	$('.homeBtn').hide();
 
+	// image stretches to fill container
+	$('.projectImage').imagefill();
+
+	// slick-carousel
 	$('.week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8').slick({
 		dots: true,
 		infinite: true,
@@ -18,12 +22,8 @@ $(function() {
 		adaptiveHeight: true
 	});
 
-	//currently loads image in lightbox window
+	// loads p5.js sketch into lightbox via iframe
 	$('.project').colorbox({rel: 'gal', iframe:true, innerWidth:"90%", innerHeight:"90%"});
-
-	$('.ajax-popup-link').magnificPopup({
-		type: 'ajax'
-	});
 
 	//active link highlighting
 	$('ul a').click(function() {
