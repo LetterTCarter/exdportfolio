@@ -23,7 +23,7 @@ $(function() {
 	});
 
 	// loads p5.js sketch into lightbox via iframe
-	$('.project').colorbox({rel: 'gal', iframe:true, innerWidth:"90%", innerHeight:"90%"});
+	$('.project').colorbox({rel: 'gal', iframe: true, innerWidth: '90%', innerHeight: '90%'});
 
 	//active link highlighting
 	$('ul a').click(function() {
