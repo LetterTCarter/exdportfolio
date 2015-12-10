@@ -42,13 +42,31 @@ h2 {
 
 #sketchDivContainer {
   max-width: 1020px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 button {
   color: $white;
   background-color: $green;
   margin-bottom: 20px;
+}
+
+.letter {
+  margin: 0.125em;
+  padding: 0.325em;
+  color: $dark-blue;
+  background-color: $green;
+}
+
+a.homeBtn {
+  text-decoration: none;
+  background-color: $green;
+  color: $white;
+  margin: 0.625em;
+  padding: 0.625em;
+  &:hover {
+    background-color: $brown;
+  }
 }
 
 .visuallyhidden {
