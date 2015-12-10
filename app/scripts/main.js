@@ -19,11 +19,11 @@ $(function() {
 	});
 
 	//currently loads image in lightbox window
-	//$('.project').colorbox();
+	$('.project').colorbox({rel: 'gal', iframe:true, innerWidth:"90%", innerHeight:"90%"});
 
-	/*$('.ajax-popup-link').magnificPopup({
+	$('.ajax-popup-link').magnificPopup({
 		type: 'ajax'
-	});*/
+	});
 
 	//active link highlighting
 	$('ul a').click(function() {
